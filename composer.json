@@ -1,0 +1,28 @@
+{
+    "name": "panda-oreo\/laravel-permission",
+    "description": "基于 spatie\/laravel-permission 二次开发的按钮级权限管理 Laravel 扩展包。(角色、权限、菜单、按钮)",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "pandaOreo",
+            "email": "819023279@qq.com"
+        }
+    ],
+    "require": {
+        "php" : "^8.0",
+        "laravel/framework": "^8.75",
+        "spatie/laravel-permission": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "PandaOreo\\Permission\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PandaOreo\\Permission\\PermissionServiceProvider"
+            ]
+        }
+    }
+}
